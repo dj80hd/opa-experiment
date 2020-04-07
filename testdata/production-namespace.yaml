@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    ingress-whitelist: "*.acmecorp.com"
+  labels:
+    openpolicyagent.org/webhook: enabled
+  name: opa-production
